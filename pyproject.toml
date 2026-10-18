@@ -1,0 +1,10 @@
+[project]
+name = "comfyui-hybridguides-helpers"
+version = "0.1.0"
+description = "Single-prompt reference conditioning, cached video encodes and resumable V2V Hybrid Guides."
+requires-python = ">=3.10"
+dependencies = []
+license = { text = "MIT" }
+
+[project.urls]
+Repository = "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers"

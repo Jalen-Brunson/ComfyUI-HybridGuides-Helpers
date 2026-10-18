@@ -1,0 +1,27 @@
+{
+  "ComfyUI": {
+    "included": false,
+    "repository": "https://github.com/comfyanonymous/ComfyUI",
+    "tested_version": "0.37.0",
+    "tested_commit": "0f74f7fb9f83a78bf46188fd4fd53e6bc44c1ae8",
+    "frontend": "1.53.6"
+  },
+  "ComfyUI-MMH3Tools": {
+    "repository": "https://github.com/ckinpdx/ComfyUI-MMH3Tools",
+    "commit": "031bb909061355d6d273dac6fe57601cf8a0197a",
+    "install_folder": "ComfyUI-MMH3Tools",
+    "included": false
+  },
+  "comfyui-videohelpersuite": {
+    "repository": "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite",
+    "commit": "4d907bee61e92c2e65af3bd6383a4e4d356126d1",
+    "install_folder": "comfyui-videohelpersuite",
+    "included": false
+  },
+  "ComfyUI-HybridWindows": {
+    "repository": "https://github.com/Jalen-Brunson/ComfyUI-HybridWindows",
+    "commit": "cddb1ed71dbf8d8123d1845e7b9d8470061182c5",
+    "install_folder": "ComfyUI-HybridWindows",
+    "included": false
+  }
+}

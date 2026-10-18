@@ -1,0 +1,11 @@
+{
+  "latent.py": ["vlm_video_prompt/condset_nodes.py (local additions)"],
+  "tags.py": ["vlm_video_prompt/binding_nodes.py and h3_format.py (local additions)"],
+  "source_encode_cache.py": ["vlm_video_prompt/source_encode_cache.py (local addition)"],
+  "loop_gates.py": ["wan_chunk_io/loop_gates.py (local addition)"],
+  "mask_time_gate.py": ["minimax_h3_mask_tools/mask_time_gate.py (local addition)"],
+  "resume.py": ["ComfyUI-MMH3Tools/mmh3tools/nodes_resume.py (local addition; grading and unused join removed)"],
+  "media.py": ["ComfyUI-MMH3Tools/mmh3tools/nodes_media.py (local addition)"],
+  "reference_cache.py": ["ComfyUI-MMH3Tools/mmh3tools/reference_cache.py (local addition)"],
+  "reference.py": ["Single-prompt adapter using public MMH3Tools reference encoding helpers and the local per-reference cache"]
+}
