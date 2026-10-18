@@ -12,7 +12,12 @@ PASS: Reference tag remapping, lazy gates, master/warmup save round trip, accept
       prefix preservation, merge and all root/subgraph link/interface checks.
 PASS: Baseline model/LoRA/sigma/upscale settings retained, except removed unused options.
 PASS: Tested helper files match the public Git commit; every node has a public source.
-PASS: Final workflow differs from the validated graph only in setup note text.
+PASS: Horizontal layout with all nine references in one strip; Easy Use Set/Get
+      nodes load without browser errors or missing node types.
+PASS: All 145 runtime API nodes, settings and connections match the prior validated
+      workflow exactly, both on initial load and after saving/reopening the graph.
+PASS: Fresh, resumed and reference-mode backend validation repeated after Set/Get routing.
+PASS: Final label-spacing adjustments change only positions, sizes and group bounds.
 
 No full GPU render was run. These checks do not establish pixel-identical output
 or minimum GPU memory requirements.

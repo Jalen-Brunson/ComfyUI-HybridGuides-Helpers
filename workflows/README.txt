@@ -52,8 +52,15 @@ Masters: output/latents/ (run-scoped names); resume records: output/latents/h3_r
 
 LAYOUT
 Blue notes explain setup and operation. Gold nodes are editable inputs/settings.
-Gray nodes process data. Sections read top to bottom: instructions, main controls,
-references, models, extra references, optional inputs, planning, sampling and output.
+Gray nodes process data. The canvas reads horizontally: source/prompt/run controls,
+all nine references in one numbered strip, model settings, then preparation and sampling.
+Optional masks and RefMods are below the reference strip. Each reference keeps its
+image, resize, background-removal and enable nodes together. Resize/background nodes
+start collapsed; expand them to adjust their settings. Reference 1 starts enabled;
+References 2–9 start disabled.
+Named Set/Get nodes from Easy Use carry connections between distant sections.
+Matching names resolve to the same source; keep the names paired when editing.
+Short connections within each section remain visible.
 Open a processing subgraph to inspect its internals. The guide video reaches both
 sampling resolutions through H3HybridWindows' integrated guide inputs.
 

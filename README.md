@@ -9,7 +9,9 @@ MMH3Tools, HybridWindows, PDD Acc or ComfyUI.
 [Download the single-prompt workflow](https://raw.githubusercontent.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/main/workflows/V2V%20Hybrid%20Guides%20-%20Single%20Prompt.json),
 then follow the [setup instructions](workflows/README.txt). One prompt is reused
 for every chunk, including continuation runs. Gold fields are editable; blue
-notes explain setup and operation. No project or chunk text files are required.
+notes explain setup and operation. All nine references are grouped in one numbered
+strip. The canvas runs horizontally, with Easy Use Set/Get nodes carrying long
+connections. No project or chunk text files are required.
 
 Install the helper repository and the other public node packages listed in the
 setup instructions, then restart ComfyUI. Copy

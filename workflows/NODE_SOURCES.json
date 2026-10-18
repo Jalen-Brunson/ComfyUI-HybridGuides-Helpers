@@ -329,6 +329,16 @@
     "HGReferenceConditioning": {
       "pack": "ComfyUI-HybridGuides-Helpers",
       "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    },
+    "easy setNode": {
+      "pack": "comfyui-easy-use",
+      "source": "https://github.com/yolain/ComfyUI-Easy-Use/tree/4ba22aa1ec2dd606995574d93d70c6c8a3744859",
+      "frontend_only": true
+    },
+    "easy getNode": {
+      "pack": "comfyui-easy-use",
+      "source": "https://github.com/yolain/ComfyUI-Easy-Use/tree/4ba22aa1ec2dd606995574d93d70c6c8a3744859",
+      "frontend_only": true
     }
   },
   "subgraphs": "Workflow definitions are embedded; no external subgraph files are needed."
