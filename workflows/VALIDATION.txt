@@ -1,0 +1,20 @@
+VALIDATION — 2026-10-18
+
+PASS: 24 helper CPU tests: cache reuse/invalidation, one-prompt conditioning,
+      resume pairing, exclusive output names, video packet reuse and audio alignment.
+PASS: 122 HybridWindows CPU tests against public MMH3Tools and unmodified ComfyUI.
+PASS: Isolated public-package registry, including the indirect latent upscaler;
+      no missing node types. Browser load/API export: no node or JavaScript errors.
+PASS: Backend prompt validation for fresh, resumed and reference-mode runs.
+PASS: One prompt broadcasts across fresh/resumed spans and reference windows advance.
+      These functional checks stub heavy text/VAE encoding.
+PASS: Reference tag remapping, lazy gates, master/warmup save round trip, accepted
+      prefix preservation, merge and all root/subgraph link/interface checks.
+PASS: Baseline model/LoRA/sigma/upscale settings retained, except removed unused options.
+PASS: Tested helper files match the public Git commit; every node has a public source.
+PASS: Final workflow differs from the validated graph only in setup note text.
+
+No full GPU render was run. These checks do not establish pixel-identical output
+or minimum GPU memory requirements.
+
+Helper commit: 4f25a127fd387086f982a46c07a2b72c093da90e

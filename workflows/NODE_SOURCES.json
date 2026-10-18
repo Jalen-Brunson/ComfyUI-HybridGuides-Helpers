@@ -1,0 +1,335 @@
+{
+  "checked": "2026-10-18",
+  "packs": {
+    "comfy-plasma": {
+      "repository": "https://github.com/Jordach/comfy-plasma",
+      "commit": "c63555fec40a7dddb36c99aa603e817abab3abdb",
+      "install_folder": "comfy-plasma",
+      "included": false
+    },
+    "ComfyUI-MiniMaxH3Mod": {
+      "repository": "https://github.com/Luisacaotica/ComfyUI-MiniMaxH3Mod",
+      "commit": "517e8c419a8584fbf69fceb487bc39d83e6a6ec8",
+      "install_folder": "ComfyUI-MiniMaxH3Mod",
+      "included": false
+    },
+    "ComfyUI-RMBG": {
+      "repository": "https://github.com/1038lab/ComfyUI-RMBG",
+      "commit": "d7402513f23f58db7d56754b02a4f51a148b4941",
+      "install_folder": "ComfyUI-RMBG",
+      "included": false
+    },
+    "MaskVidExperiments": {
+      "repository": "https://github.com/drozbay/MaskVidExperiments",
+      "commit": "c32ed8c17e6fe892a174ebf25fe98b1317de97fb",
+      "install_folder": "MaskVidExperiments",
+      "included": false
+    },
+    "comfyui-custom-scripts": {
+      "repository": "https://github.com/pythongosssss/ComfyUI-Custom-Scripts",
+      "commit": "609f3afaa74b2f88ef9ce8d939626065e3247469",
+      "install_folder": "comfyui-custom-scripts",
+      "included": false
+    },
+    "comfyui-easy-use": {
+      "repository": "https://github.com/yolain/ComfyUI-Easy-Use",
+      "commit": "4ba22aa1ec2dd606995574d93d70c6c8a3744859",
+      "install_folder": "comfyui-easy-use",
+      "included": false
+    },
+    "comfyui-videohelpersuite": {
+      "repository": "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite",
+      "commit": "4d907bee61e92c2e65af3bd6383a4e4d356126d1",
+      "install_folder": "comfyui-videohelpersuite",
+      "included": false
+    },
+    "Comfyui_Minimax_h3_latent_Upscaler": {
+      "repository": "https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler",
+      "commit": "40316cf008b2fd8663263270669eb4da23f89d2c",
+      "install_folder": "Comfyui_Minimax_h3_latent_Upscaler",
+      "included": false
+    },
+    "ComfyUI-HybridWindows": {
+      "repository": "https://github.com/Jalen-Brunson/ComfyUI-HybridWindows",
+      "commit": "cddb1ed71dbf8d8123d1845e7b9d8470061182c5",
+      "install_folder": "ComfyUI-HybridWindows",
+      "included": false
+    },
+    "ComfyUI-MMH3Tools": {
+      "repository": "https://github.com/ckinpdx/ComfyUI-MMH3Tools",
+      "commit": "031bb909061355d6d273dac6fe57601cf8a0197a",
+      "install_folder": "ComfyUI-MMH3Tools",
+      "included": false
+    },
+    "minimax_h3_pdd_acc": {
+      "repository": "https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc",
+      "commit": "311a65dd53832d8a5f8177a9d5fb923c09e35a90",
+      "install_folder": "minimax_h3_pdd_acc",
+      "included": false
+    },
+    "ComfyUI-HybridGuides-Helpers": {
+      "included": false,
+      "install_folder": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e",
+      "repository": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers",
+      "version": "0.1.0",
+      "commit": "4f25a127fd387086f982a46c07a2b72c093da90e",
+      "tag": "v0.1.0"
+    },
+    "ComfyUI": {
+      "included": false,
+      "repository": "https://github.com/comfyanonymous/ComfyUI",
+      "tested_version": "0.37.0",
+      "tested_commit": "0f74f7fb9f83a78bf46188fd4fd53e6bc44c1ae8",
+      "frontend": "1.53.6"
+    }
+  },
+  "nodes": {
+    "RMBG": {
+      "pack": "ComfyUI-RMBG",
+      "source": "https://github.com/1038lab/ComfyUI-RMBG"
+    },
+    "VAEDecodeAudio": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "PrimitiveFloat": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "CLIPLoader": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "VAELoader": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "PrimitiveInt": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "KSamplerSelect": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "H3RefModCondSetApply": {
+      "pack": "ComfyUI-MMH3Tools",
+      "source": "https://github.com/ckinpdx/ComfyUI-MMH3Tools"
+    },
+    "ImageCompositeMasked": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "PreviewAny": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "JDC_ResizeFactor": {
+      "pack": "comfy-plasma",
+      "source": "https://github.com/Jordach/comfy-plasma"
+    },
+    "LoadImage": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "easy anythingIndexSwitch": {
+      "pack": "comfyui-easy-use",
+      "source": "https://github.com/yolain/ComfyUI-Easy-Use"
+    },
+    "PrimitiveString": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "ImageAddNoise": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "MiniMaxH3SigmaShift": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "BlockSparseAttention": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "ManualSigmas": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "VAEDecode": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "MMH3DimensionCalculator": {
+      "pack": "ComfyUI-MMH3Tools",
+      "source": "https://github.com/ckinpdx/ComfyUI-MMH3Tools"
+    },
+    "H3HybridWindows": {
+      "pack": "ComfyUI-HybridWindows",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridWindows"
+    },
+    "H3HybridWarmupPrior": {
+      "pack": "ComfyUI-HybridWindows",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridWindows"
+    },
+    "LoraLoaderModelOnly": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "MiniMaxH3RefModsLoader": {
+      "pack": "ComfyUI-MiniMaxH3Mod",
+      "source": "https://github.com/Luisacaotica/ComfyUI-MiniMaxH3Mod"
+    },
+    "H3HybridCleanLatentUpscale": {
+      "pack": "ComfyUI-HybridWindows",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridWindows"
+    },
+    "MiniMaxH3PDDAccApply": {
+      "pack": "minimax_h3_pdd_acc",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-MiniMax-H3-PDD-Acc"
+    },
+    "UNETLoader": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "RandomNoise": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "PrimitiveBoolean": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "ComfyNotNode": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "PrimitiveStringMultiline": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "ComfyMathExpression": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "VHS_VideoInfo": {
+      "pack": "comfyui-videohelpersuite",
+      "source": "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
+    },
+    "MathExpression|pysssss": {
+      "pack": "comfyui-custom-scripts",
+      "source": "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
+    },
+    "VHS_LoadVideoFFmpegPath": {
+      "pack": "comfyui-videohelpersuite",
+      "source": "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite"
+    },
+    "MMH3ImageList": {
+      "pack": "ComfyUI-MMH3Tools",
+      "source": "https://github.com/ckinpdx/ComfyUI-MMH3Tools"
+    },
+    "VAEEncodeAudio": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "MMH3PackAV": {
+      "pack": "ComfyUI-MMH3Tools",
+      "source": "https://github.com/ckinpdx/ComfyUI-MMH3Tools"
+    },
+    "ImageToMask": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "MVEx_FrameRangeMask": {
+      "pack": "MaskVidExperiments",
+      "source": "https://github.com/drozbay/MaskVidExperiments"
+    },
+    "BasicGuider": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "SplitSigmas": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "SamplerCustomAdvanced": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "DisableNoise": {
+      "pack": "ComfyUI",
+      "source": "https://github.com/comfyanonymous/ComfyUI"
+    },
+    "MinimaxH3LatentUpscaler3D": {
+      "pack": "Comfyui_Minimax_h3_latent_Upscaler",
+      "source": "https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler",
+      "indirect_dependency_of": "H3HybridCleanLatentUpscale"
+    },
+    "MarkdownNote": {
+      "pack": "ComfyUI",
+      "source": "ComfyUI frontend (built in)"
+    },
+    "HGSaveAVLatent": {
+      "pack": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    },
+    "HGContinueMaster": {
+      "pack": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    },
+    "HGMergeMasters": {
+      "pack": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    },
+    "HGTagRenumber": {
+      "pack": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    },
+    "HGCachedSourceEncode": {
+      "pack": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    },
+    "HGMaskTimeGate": {
+      "pack": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    },
+    "HGImageGate": {
+      "pack": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    },
+    "HGAnyGate": {
+      "pack": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    },
+    "HGMaskBinarize": {
+      "pack": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    },
+    "HGLoadResumeRun": {
+      "pack": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    },
+    "HGSaveResumeVideo": {
+      "pack": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    },
+    "HGResumePlan": {
+      "pack": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    },
+    "HGResumeVideo": {
+      "pack": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    },
+    "HGAudioRange": {
+      "pack": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    },
+    "HGReferenceConditioning": {
+      "pack": "ComfyUI-HybridGuides-Helpers",
+      "source": "https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/tree/4f25a127fd387086f982a46c07a2b72c093da90e"
+    }
+  },
+  "subgraphs": "Workflow definitions are embedded; no external subgraph files are needed."
+}

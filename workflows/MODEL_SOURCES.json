@@ -1,0 +1,42 @@
+[
+  {
+    "source": "https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/diffusion_models/minimax_h3_ref2va_int8_convrot.safetensors",
+    "download": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_int8_convrot.safetensors",
+    "install_to": "ComfyUI/models/diffusion_models/minimax_h3_ref2va_int8_convrot.safetensors"
+  },
+  {
+    "source": "https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+    "download": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors",
+    "install_to": "ComfyUI/models/text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors"
+  },
+  {
+    "source": "https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/vae/minimax_h3_video_vae_int8_convrot.safetensors",
+    "download": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_int8_convrot.safetensors",
+    "install_to": "ComfyUI/models/vae/minimax_h3_video_vae_int8_convrot.safetensors"
+  },
+  {
+    "source": "https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/vae/minimax_h3_audio_vae_fp32.safetensors",
+    "download": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors",
+    "install_to": "ComfyUI/models/vae/minimax_h3_audio_vae_fp32.safetensors"
+  },
+  {
+    "source": "https://huggingface.co/Alissonerdx/Minimax-H3-ComfyUI/blob/main/loras/minimax_h3_character_swap_v1.1_ref2va_fro.safetensors",
+    "download": "https://huggingface.co/Alissonerdx/Minimax-H3-ComfyUI/resolve/main/loras/minimax_h3_character_swap_v1.1_ref2va_fro.safetensors",
+    "install_to": "ComfyUI/models/loras/minimax/minimax_h3_character_swap_v1.1_ref2va_fro.safetensors"
+  },
+  {
+    "source": "https://huggingface.co/Kijai/MiniMax-H3-experimental/blob/main/loras/minimax_h3_DMAD_4step_full_lora_avg_rank_39_bf16.safetensors",
+    "download": "https://huggingface.co/Kijai/MiniMax-H3-experimental/resolve/main/loras/minimax_h3_DMAD_4step_full_lora_avg_rank_39_bf16.safetensors",
+    "install_to": "ComfyUI/models/loras/minimax/minimax_h3_DMAD_4step_full_lora_avg_rank_39_bf16.safetensors"
+  },
+  {
+    "source": "https://huggingface.co/aptech0081/MiniMax-H3-Acc-LoRAs-ComfyUI/blob/main/minimax_h3_ref2va_pdd_acc_8step_comfyui.safetensors",
+    "download": "https://huggingface.co/aptech0081/MiniMax-H3-Acc-LoRAs-ComfyUI/resolve/main/minimax_h3_ref2va_pdd_acc_8step_comfyui.safetensors",
+    "install_to": "ComfyUI/models/pdd_acc/minimax_h3_ref2va_pdd_acc_8step_comfyui.safetensors"
+  },
+  {
+    "source": "https://huggingface.co/Alissonerdx/Minimax-H3-ComfyUI/blob/main/latent_upscaler/h3_upscaler_lms_v0.1_fp32.safetensors",
+    "download": "https://huggingface.co/Alissonerdx/Minimax-H3-ComfyUI/resolve/main/latent_upscaler/h3_upscaler_lms_v0.1_fp32.safetensors",
+    "install_to": "ComfyUI/models/latent_upscale_models/h3_upscaler_lms_v0.1_fp32.safetensors"
+  }
+]

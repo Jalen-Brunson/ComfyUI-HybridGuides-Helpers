@@ -1,0 +1,12 @@
+PUBLIC NODE SOURCES
+
+All workflow nodes are available from the public repositories in NODE_SOURCES.json.
+ComfyUI, MMH3Tools, PDD Acc and HybridWindows were validated from their unmodified
+recorded Git commits. HybridWindows includes the published mask-aware overlap fix.
+
+Hybrid Guides Helpers source is at the root of this repository:
+https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/commit/4f25a127fd387086f982a46c07a2b72c093da90e
+It isolates the necessary prompt, caching, resume, media and mask utilities.
+No global node replacements, color/grading corrections, experimental samplers or
+PDD off-envelope options are included. ../PROVENANCE.json records the extracted sources.
+Models, private media, original prompts and local project files are not included.

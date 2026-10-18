@@ -4,9 +4,32 @@ ComfyUI helpers for single-prompt, resumable MiniMax H3 video-to-video workflows
 These nodes work alongside the public packages; they do not replace or patch
 MMH3Tools, HybridWindows, PDD Acc or ComfyUI.
 
+## V2V Hybrid Guides workflow
+
+[Download the single-prompt workflow](https://raw.githubusercontent.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers/main/workflows/V2V%20Hybrid%20Guides%20-%20Single%20Prompt.json),
+then follow the [setup instructions](workflows/README.txt). One prompt is reused
+for every chunk, including continuation runs. Gold fields are editable; blue
+notes explain setup and operation. No project or chunk text files are required.
+
+Install the helper repository and the other public node packages listed in the
+setup instructions, then restart ComfyUI. Copy
+[the placeholder image](workflows/input/hybrid_guides_reference.png) into
+`ComfyUI/input/`, load the workflow, and select your source video and reference
+image. Start with **Accepted chunks = 0** and **New chunks = 1**.
+
+The workflow folder includes [node sources and tested commits](workflows/NODE_SOURCES.json),
+[model download links and install locations](workflows/MODEL_SOURCES.json), and
+[validation results](workflows/VALIDATION.txt). All nodes have public GitHub
+sources. Model weights and source media must be supplied separately.
+
 ## Install
 
 Clone this repository into `ComfyUI/custom_nodes/ComfyUI-HybridGuides-Helpers`.
+
+```bash
+git clone https://github.com/Jalen-Brunson/ComfyUI-HybridGuides-Helpers.git ComfyUI/custom_nodes/ComfyUI-HybridGuides-Helpers
+```
+
 Install these dependencies and restart ComfyUI:
 
 - [ComfyUI-MMH3Tools](https://github.com/ckinpdx/ComfyUI-MMH3Tools), tested at `031bb909061355d6d273dac6fe57601cf8a0197a`.
@@ -17,7 +40,8 @@ The tested ComfyUI commit is `0f74f7fb9`, version 0.37.0. Python dependencies
 come from ComfyUI and the two packages above. For Hybrid Guides sampling, use
 [HybridWindows](https://github.com/Jalen-Brunson/ComfyUI-HybridWindows) at
 `cddb1ed71dbf8d8123d1845e7b9d8470061182c5` or newer for mask-aware partial overlap.
-The workflow's other model and node dependencies are listed in its share package.
+The workflow's other model and node dependencies are listed in its
+[setup instructions](workflows/README.txt).
 
 ## Nodes
 
