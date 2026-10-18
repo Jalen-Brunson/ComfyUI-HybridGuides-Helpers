@@ -73,8 +73,8 @@ request snaps to 243 frames; overlap 39. Native warmup context is saved for resu
 The run now starts fresh with one chunk. Private paths/images/prompts and old text-file
 readers are removed. The inactive experimental patches, diagnostics, scene reporter,
 finish-grade launcher and custom live-preview override have been removed. Core preview
-can be used. Hair masks, inpainting, RefMods and nine image slots remain. Unconnected extra
-control-video and likeness branches were removed.
+can be used. Inpainting, RefMods and nine image slots remain. Unused Control B/C probes and
+settings, extra control-video branches and likeness branches were removed.
 The sample PNG is not a character reference. No original media or private prompts ship.
 
 DEPENDENCIES — PUBLIC PACKS

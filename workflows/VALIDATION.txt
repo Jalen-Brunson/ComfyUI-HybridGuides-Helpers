@@ -14,12 +14,14 @@ PASS: Baseline model/LoRA/sigma/upscale settings retained, except removed unused
 PASS: Tested helper files match the public Git commit; every node has a public source.
 PASS: Horizontal layout with all nine references in one strip; Easy Use Set/Get
       nodes load without browser errors or missing node types.
-PASS: All 145 runtime API nodes, settings and connections match the prior validated
-      workflow exactly, both on initial load and after saving/reopening the graph.
-PASS: Fresh, resumed and reference-mode backend validation repeated after Set/Get routing.
-PASS: Final label-spacing adjustments change only positions, sizes and group bounds.
+PASS: Removed twelve unused Control B/C probe, dimension and settings nodes. Their
+      dimension expressions were output nodes and executed disconnected video probes.
+PASS: All 133 retained runtime API nodes, settings and connections are unchanged,
+      both on initial load and after saving/reopening the graph.
+PASS: Fresh, resumed and reference-mode backend validation repeated after probe removal.
+PASS: Label-spacing adjustments change only positions, sizes and group bounds.
 
-No full GPU render was run. These checks do not establish pixel-identical output
-or minimum GPU memory requirements.
+This report covers CPU, browser and schema checks. It does not establish
+pixel-identical output or minimum GPU memory requirements.
 
 Helper commit: 4f25a127fd387086f982a46c07a2b72c093da90e

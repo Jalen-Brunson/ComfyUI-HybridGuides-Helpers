@@ -1,5 +1,5 @@
 {
-  "revision": 3,
+  "revision": 4,
   "last_node_id": 2513,
   "last_link_id": 3080,
   "nodes": [
@@ -724,78 +724,6 @@
       "bgcolor": "#1b252e"
     },
     {
-      "id": 563,
-      "type": "PrimitiveFloat",
-      "pos": [
-        2020,
-        2592
-      ],
-      "size": [
-        540,
-        112
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "links": [
-            3025
-          ]
-        }
-      ],
-      "title": "DOWNSCALE Ctrl B (x native)",
-      "properties": {
-        "Node name for S&R": "PrimitiveFloat",
-        "cnr_id": "comfy-core",
-        "ver": "0.37.0"
-      },
-      "widgets_values": [
-        1
-      ],
-      "color": "#76581f",
-      "bgcolor": "#3d321d"
-    },
-    {
-      "id": 564,
-      "type": "PrimitiveFloat",
-      "pos": [
-        2020,
-        2876
-      ],
-      "size": [
-        540,
-        112
-      ],
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "links": [
-            3026
-          ]
-        }
-      ],
-      "title": "DOWNSCALE Ctrl C (x native)",
-      "properties": {
-        "Node name for S&R": "PrimitiveFloat",
-        "cnr_id": "comfy-core",
-        "ver": "0.37.0"
-      },
-      "widgets_values": [
-        0.5
-      ],
-      "color": "#76581f",
-      "bgcolor": "#3d321d"
-    },
-    {
       "id": 117,
       "type": "HGImageGate",
       "pos": [
@@ -969,16 +897,6 @@
           "link": 1420
         },
         {
-          "name": "path_ctrl_b",
-          "type": "STRING",
-          "link": 1422
-        },
-        {
-          "name": "path_ctrl_c",
-          "type": "STRING",
-          "link": 1423
-        },
-        {
           "name": "path_source",
           "type": "STRING",
           "link": 1425
@@ -1009,18 +927,6 @@
           "shape": 7,
           "type": "INT",
           "link": 1430
-        },
-        {
-          "name": "downscale_ctrl_b",
-          "shape": 7,
-          "type": "FLOAT",
-          "link": 1432
-        },
-        {
-          "name": "downscale_ctrl_c",
-          "shape": 7,
-          "type": "FLOAT",
-          "link": 1433
         },
         {
           "name": "path_ctrl_a",
@@ -1164,7 +1070,7 @@
       "type": "PrimitiveFloat",
       "pos": [
         2020,
-        3160
+        2024
       ],
       "size": [
         540,
@@ -1930,78 +1836,6 @@
       ],
       "color": "#253441",
       "bgcolor": "#1b252e"
-    },
-    {
-      "id": 258,
-      "type": "PrimitiveString",
-      "pos": [
-        2020,
-        2024
-      ],
-      "size": [
-        540,
-        112
-      ],
-      "flags": {},
-      "order": 137,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            3020
-          ]
-        }
-      ],
-      "title": "OPTIONAL \u2014 Control C video",
-      "properties": {
-        "Node name for S&R": "PrimitiveString",
-        "cnr_id": "comfy-core",
-        "ver": "0.37.0"
-      },
-      "widgets_values": [
-        "input/optional_video.mp4"
-      ],
-      "color": "#76581f",
-      "bgcolor": "#3d321d"
-    },
-    {
-      "id": 256,
-      "type": "PrimitiveString",
-      "pos": [
-        2020,
-        1740
-      ],
-      "size": [
-        540,
-        112
-      ],
-      "flags": {},
-      "order": 138,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            3019
-          ]
-        }
-      ],
-      "title": "OPTIONAL \u2014 Control B video",
-      "properties": {
-        "Node name for S&R": "PrimitiveString",
-        "cnr_id": "comfy-core",
-        "ver": "0.37.0"
-      },
-      "widgets_values": [
-        "input/optional_video.mp4"
-      ],
-      "color": "#76581f",
-      "bgcolor": "#3d321d"
     },
     {
       "id": 2029,
@@ -4138,7 +3972,7 @@
       "type": "PrimitiveFloat",
       "pos": [
         2020,
-        2308
+        1740
       ],
       "size": [
         540,
@@ -5474,7 +5308,7 @@
       "mode": 0,
       "properties": {},
       "widgets_values": [
-        "## Advanced inputs\nHair masks, inpainting and RefMods default OFF. Supply matching video files before enabling them. Mask white = regenerate.\n\nThe source path also supplies audio and inpaint input. Controls are windowed to the current run automatically. Keep the reference gates consistent with your prompt tags.\n\nReferences 2\u20139 start disabled; enable only the pictures you actually use. The reference images are resized and passed through BEN2 background removal as in the original flow. Bypass RMBG when you need the original background."
+        "## Advanced inputs\nInpainting and RefMods default OFF. Supply an inpaint mask video before enabling inpainting. Mask white = regenerate.\n\nThe source path also supplies audio and inpaint input. Controls are windowed to the current run automatically. Keep the reference gates consistent with your prompt tags.\n\nReferences 2\u20139 start disabled; enable only the pictures you actually use. The reference images are resized and passed through BEN2 background removal as in the original flow. Bypass RMBG when you need the original background."
       ],
       "color": "#244653",
       "bgcolor": "#172e39"
@@ -6869,152 +6703,6 @@
       "bgcolor": "#26343e"
     },
     {
-      "id": 2342,
-      "type": "easy setNode",
-      "pos": [
-        2040,
-        1892
-      ],
-      "size": [
-        230,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 0,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "link": 3019
-        }
-      ],
-      "outputs": [],
-      "title": "HG Control B path",
-      "properties": {
-        "previousName": "HG Control B path",
-        "cnr_id": "comfyui-easy-use",
-        "ver": "4ba22aa1ec2dd606995574d93d70c6c8a3744859"
-      },
-      "widgets_values": [
-        "HG Control B path"
-      ],
-      "color": "#334b59",
-      "bgcolor": "#26343e"
-    },
-    {
-      "id": 2343,
-      "type": "easy getNode",
-      "pos": [
-        8280,
-        702
-      ],
-      "size": [
-        230,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            1422
-          ]
-        }
-      ],
-      "title": "HG Control B path",
-      "properties": {
-        "cnr_id": "comfyui-easy-use",
-        "ver": "4ba22aa1ec2dd606995574d93d70c6c8a3744859"
-      },
-      "widgets_values": [
-        "HG Control B path"
-      ],
-      "color": "#334b59",
-      "bgcolor": "#26343e"
-    },
-    {
-      "id": 2344,
-      "type": "easy setNode",
-      "pos": [
-        2040,
-        2176
-      ],
-      "size": [
-        230,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 0,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "link": 3020
-        }
-      ],
-      "outputs": [],
-      "title": "HG Control C path",
-      "properties": {
-        "previousName": "HG Control C path",
-        "cnr_id": "comfyui-easy-use",
-        "ver": "4ba22aa1ec2dd606995574d93d70c6c8a3744859"
-      },
-      "widgets_values": [
-        "HG Control C path"
-      ],
-      "color": "#334b59",
-      "bgcolor": "#26343e"
-    },
-    {
-      "id": 2345,
-      "type": "easy getNode",
-      "pos": [
-        8280,
-        754
-      ],
-      "size": [
-        230,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            1423
-          ]
-        }
-      ],
-      "title": "HG Control C path",
-      "properties": {
-        "cnr_id": "comfyui-easy-use",
-        "ver": "4ba22aa1ec2dd606995574d93d70c6c8a3744859"
-      },
-      "widgets_values": [
-        "HG Control C path"
-      ],
-      "color": "#334b59",
-      "bgcolor": "#26343e"
-    },
-    {
       "id": 2346,
       "type": "easy getNode",
       "pos": [
@@ -7057,7 +6745,7 @@
       "type": "easy setNode",
       "pos": [
         2040,
-        2460
+        1892
       ],
       "size": [
         230,
@@ -7377,152 +7065,6 @@
       },
       "widgets_values": [
         "HG Source height"
-      ],
-      "color": "#334b59",
-      "bgcolor": "#26343e"
-    },
-    {
-      "id": 2356,
-      "type": "easy setNode",
-      "pos": [
-        2040,
-        2744
-      ],
-      "size": [
-        230,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 0,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "link": 3025
-        }
-      ],
-      "outputs": [],
-      "title": "HG Control B scale",
-      "properties": {
-        "previousName": "HG Control B scale",
-        "cnr_id": "comfyui-easy-use",
-        "ver": "4ba22aa1ec2dd606995574d93d70c6c8a3744859"
-      },
-      "widgets_values": [
-        "HG Control B scale"
-      ],
-      "color": "#334b59",
-      "bgcolor": "#26343e"
-    },
-    {
-      "id": 2357,
-      "type": "easy getNode",
-      "pos": [
-        8280,
-        1118
-      ],
-      "size": [
-        230,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "links": [
-            1432
-          ]
-        }
-      ],
-      "title": "HG Control B scale",
-      "properties": {
-        "cnr_id": "comfyui-easy-use",
-        "ver": "4ba22aa1ec2dd606995574d93d70c6c8a3744859"
-      },
-      "widgets_values": [
-        "HG Control B scale"
-      ],
-      "color": "#334b59",
-      "bgcolor": "#26343e"
-    },
-    {
-      "id": 2358,
-      "type": "easy setNode",
-      "pos": [
-        2040,
-        3028
-      ],
-      "size": [
-        230,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 0,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "link": 3026
-        }
-      ],
-      "outputs": [],
-      "title": "HG Control C scale",
-      "properties": {
-        "previousName": "HG Control C scale",
-        "cnr_id": "comfyui-easy-use",
-        "ver": "4ba22aa1ec2dd606995574d93d70c6c8a3744859"
-      },
-      "widgets_values": [
-        "HG Control C scale"
-      ],
-      "color": "#334b59",
-      "bgcolor": "#26343e"
-    },
-    {
-      "id": 2359,
-      "type": "easy getNode",
-      "pos": [
-        8280,
-        1170
-      ],
-      "size": [
-        230,
-        60
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 0,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "FLOAT",
-          "type": "FLOAT",
-          "links": [
-            1433
-          ]
-        }
-      ],
-      "title": "HG Control C scale",
-      "properties": {
-        "cnr_id": "comfyui-easy-use",
-        "ver": "4ba22aa1ec2dd606995574d93d70c6c8a3744859"
-      },
-      "widgets_values": [
-        "HG Control C scale"
       ],
       "color": "#334b59",
       "bgcolor": "#26343e"
@@ -9142,7 +8684,7 @@
       "type": "easy setNode",
       "pos": [
         2040,
-        3312
+        2176
       ],
       "size": [
         230,
@@ -13590,27 +13132,11 @@
       "INT"
     ],
     [
-      1422,
-      2343,
-      0,
-      1485,
-      1,
-      "STRING"
-    ],
-    [
-      1423,
-      2345,
-      0,
-      1485,
-      2,
-      "STRING"
-    ],
-    [
       1425,
       2346,
       0,
       1485,
-      3,
+      1,
       "STRING"
     ],
     [
@@ -13618,7 +13144,7 @@
       2348,
       0,
       1485,
-      4,
+      2,
       "FLOAT"
     ],
     [
@@ -13626,7 +13152,7 @@
       2349,
       0,
       1485,
-      5,
+      3,
       "FLOAT"
     ],
     [
@@ -13634,7 +13160,7 @@
       2351,
       0,
       1485,
-      6,
+      4,
       "INT"
     ],
     [
@@ -13642,7 +13168,7 @@
       2353,
       0,
       1485,
-      7,
+      5,
       "FLOAT"
     ],
     [
@@ -13650,31 +13176,15 @@
       2355,
       0,
       1485,
-      8,
+      6,
       "INT"
-    ],
-    [
-      1432,
-      2357,
-      0,
-      1485,
-      9,
-      "FLOAT"
-    ],
-    [
-      1433,
-      2359,
-      0,
-      1485,
-      10,
-      "FLOAT"
     ],
     [
       1434,
       2346,
       0,
       1485,
-      11,
+      7,
       "STRING"
     ],
     [
@@ -14798,22 +14308,6 @@
       "INT"
     ],
     [
-      3019,
-      256,
-      0,
-      2342,
-      0,
-      "STRING"
-    ],
-    [
-      3020,
-      258,
-      0,
-      2344,
-      0,
-      "STRING"
-    ],
-    [
       3021,
       562,
       0,
@@ -14844,22 +14338,6 @@
       2354,
       0,
       "INT"
-    ],
-    [
-      3025,
-      563,
-      0,
-      2356,
-      0,
-      "FLOAT"
-    ],
-    [
-      3026,
-      564,
-      0,
-      2358,
-      0,
-      "FLOAT"
     ],
     [
       3027,
@@ -15453,12 +14931,12 @@
     },
     {
       "id": 13,
-      "title": "03  OPTIONAL \u2014 MASKS / CONTROL INPUTS / REFMODS",
+      "title": "03  OPTIONAL \u2014 INPAINT MASK / REFMODS",
       "bounding": [
         1360,
         1645,
         3780,
-        1799
+        1395
       ],
       "color": "#395e74",
       "font_size": 30,
@@ -16543,7 +16021,7 @@
           "lastLinkId": 3001,
           "lastRerouteId": 0
         },
-        "revision": 0,
+        "revision": 1,
         "config": {},
         "name": "LOADERS",
         "inputNode": {
@@ -16552,7 +16030,7 @@
             20,
             100,
             280,
-            338
+            240
           ]
         },
         "outputNode": {
@@ -16578,30 +16056,6 @@
             ]
           },
           {
-            "id": "d177491e-753a-4091-9afd-c991877d1605",
-            "name": "path_ctrl_b",
-            "type": "STRING",
-            "linkIds": [
-              921
-            ],
-            "pos": [
-              280,
-              164
-            ]
-          },
-          {
-            "id": "6a1b59e5-fcbe-4566-8c13-d1be16c9b73c",
-            "name": "path_ctrl_c",
-            "type": "STRING",
-            "linkIds": [
-              929
-            ],
-            "pos": [
-              280,
-              188
-            ]
-          },
-          {
             "id": "2bfa8b23-a7a3-441c-8c3b-e246dc1b1d1f",
             "name": "path_source",
             "type": "STRING",
@@ -16610,7 +16064,7 @@
             ],
             "pos": [
               280,
-              212
+              164
             ]
           },
           {
@@ -16623,7 +16077,7 @@
             ],
             "pos": [
               280,
-              236
+              188
             ]
           },
           {
@@ -16636,7 +16090,7 @@
             ],
             "pos": [
               280,
-              260
+              212
             ]
           },
           {
@@ -16649,7 +16103,7 @@
             ],
             "pos": [
               280,
-              284
+              236
             ]
           },
           {
@@ -16662,7 +16116,7 @@
             ],
             "pos": [
               280,
-              308
+              260
             ]
           },
           {
@@ -16674,33 +16128,7 @@
             ],
             "pos": [
               280,
-              332
-            ]
-          },
-          {
-            "id": "ca739a82-c683-44f5-8315-8fedb49f954b",
-            "name": "downscale_ctrl_b",
-            "type": "FLOAT",
-            "linkIds": [
-              946,
-              947
-            ],
-            "pos": [
-              280,
-              356
-            ]
-          },
-          {
-            "id": "e9013068-3aa1-4a66-8216-5cfd9a3e54e8",
-            "name": "downscale_ctrl_c",
-            "type": "FLOAT",
-            "linkIds": [
-              948,
-              949
-            ],
-            "pos": [
-              280,
-              380
+              284
             ]
           },
           {
@@ -16712,7 +16140,7 @@
             ],
             "pos": [
               280,
-              404
+              308
             ]
           }
         ],
@@ -17005,629 +16433,11 @@
             "bgcolor": "#1b252e"
           },
           {
-            "id": 549,
-            "type": "VHS_LoadVideoFFmpegPath",
-            "pos": [
-              400,
-              602
-            ],
-            "size": [
-              460,
-              333
-            ],
-            "flags": {},
-            "order": 7,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "meta_batch",
-                "name": "meta_batch",
-                "shape": 7,
-                "type": "VHS_BatchManager",
-                "link": null
-              },
-              {
-                "localized_name": "vae",
-                "name": "vae",
-                "shape": 7,
-                "type": "VAE",
-                "link": null
-              },
-              {
-                "localized_name": "video",
-                "name": "video",
-                "type": "STRING",
-                "widget": {
-                  "name": "video"
-                },
-                "link": 921
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "IMAGE",
-                "name": "IMAGE",
-                "type": "IMAGE",
-                "links": []
-              },
-              {
-                "localized_name": "mask",
-                "name": "mask",
-                "type": "MASK",
-                "links": []
-              },
-              {
-                "localized_name": "audio",
-                "name": "audio",
-                "type": "AUDIO",
-                "links": []
-              },
-              {
-                "localized_name": "video_info",
-                "name": "video_info",
-                "type": "VHS_VIDEOINFO",
-                "links": [
-                  922
-                ]
-              }
-            ],
-            "title": "PROBE \u2014 Ctrl B dims (1 frame)",
-            "properties": {
-              "Node name for S&R": "VHS_LoadVideoFFmpegPath",
-              "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite",
-              "ver": "4d907bee61e92c2e65af3bd6383a4e4d356126d1"
-            },
-            "widgets_values": {
-              "video": "input/source.mp4",
-              "force_rate": 0,
-              "custom_width": 0,
-              "custom_height": 0,
-              "frame_load_cap": 1,
-              "start_time": 0,
-              "format": "AnimateDiff"
-            },
-            "color": "#253441",
-            "bgcolor": "#1b252e"
-          },
-          {
-            "id": 550,
-            "type": "VHS_VideoInfo",
-            "pos": [
-              920,
-              621
-            ],
-            "size": [
-              460,
-              290
-            ],
-            "flags": {},
-            "order": 8,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "video_info",
-                "name": "video_info",
-                "type": "VHS_VIDEOINFO",
-                "link": 922
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "source_fps\ud83d\udfe8",
-                "name": "source_fps\ud83d\udfe8",
-                "type": "FLOAT",
-                "links": []
-              },
-              {
-                "localized_name": "source_frame_count\ud83d\udfe8",
-                "name": "source_frame_count\ud83d\udfe8",
-                "type": "INT",
-                "links": []
-              },
-              {
-                "localized_name": "source_duration\ud83d\udfe8",
-                "name": "source_duration\ud83d\udfe8",
-                "type": "FLOAT",
-                "links": []
-              },
-              {
-                "localized_name": "source_width\ud83d\udfe8",
-                "name": "source_width\ud83d\udfe8",
-                "type": "INT",
-                "links": [
-                  923
-                ]
-              },
-              {
-                "localized_name": "source_height\ud83d\udfe8",
-                "name": "source_height\ud83d\udfe8",
-                "type": "INT",
-                "links": [
-                  925
-                ]
-              },
-              {
-                "localized_name": "loaded_fps\ud83d\udfe6",
-                "name": "loaded_fps\ud83d\udfe6",
-                "type": "FLOAT",
-                "links": []
-              },
-              {
-                "localized_name": "loaded_frame_count\ud83d\udfe6",
-                "name": "loaded_frame_count\ud83d\udfe6",
-                "type": "INT",
-                "links": []
-              },
-              {
-                "localized_name": "loaded_duration\ud83d\udfe6",
-                "name": "loaded_duration\ud83d\udfe6",
-                "type": "FLOAT",
-                "links": []
-              },
-              {
-                "localized_name": "loaded_width\ud83d\udfe6",
-                "name": "loaded_width\ud83d\udfe6",
-                "type": "INT",
-                "links": []
-              },
-              {
-                "localized_name": "loaded_height\ud83d\udfe6",
-                "name": "loaded_height\ud83d\udfe6",
-                "type": "INT",
-                "links": []
-              }
-            ],
-            "title": "Ctrl B video info",
-            "properties": {
-              "Node name for S&R": "VHS_VideoInfo",
-              "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite",
-              "ver": "4d907bee61e92c2e65af3bd6383a4e4d356126d1"
-            },
-            "widgets_values": {},
-            "color": "#253441",
-            "bgcolor": "#1b252e"
-          },
-          {
-            "id": 552,
-            "type": "MathExpression|pysssss",
-            "pos": [
-              1440,
-              120
-            ],
-            "size": [
-              460,
-              161
-            ],
-            "flags": {},
-            "order": 9,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "a",
-                "name": "a",
-                "shape": 7,
-                "type": "INT,FLOAT,IMAGE,LATENT",
-                "link": 923
-              },
-              {
-                "localized_name": "b",
-                "name": "b",
-                "shape": 7,
-                "type": "INT,FLOAT,IMAGE,LATENT",
-                "link": null
-              },
-              {
-                "localized_name": "c",
-                "name": "c",
-                "shape": 7,
-                "type": "INT,FLOAT,IMAGE,LATENT",
-                "link": 946
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "INT",
-                "name": "INT",
-                "type": "INT",
-                "links": []
-              },
-              {
-                "localized_name": "FLOAT",
-                "name": "FLOAT",
-                "type": "FLOAT",
-                "links": []
-              }
-            ],
-            "title": "Ctrl B (x native) width /32",
-            "properties": {
-              "Node name for S&R": "MathExpression|pysssss",
-              "aux_id": "pythongosssss/ComfyUI-Custom-Scripts",
-              "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469"
-            },
-            "widgets_values": [
-              "max(32, round(a * c / 32) * 32)"
-            ],
-            "color": "#253441",
-            "bgcolor": "#1b252e"
-          },
-          {
-            "id": 553,
-            "type": "MathExpression|pysssss",
-            "pos": [
-              1440,
-              361
-            ],
-            "size": [
-              460,
-              161
-            ],
-            "flags": {},
-            "order": 10,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "a",
-                "name": "a",
-                "shape": 7,
-                "type": "INT,FLOAT,IMAGE,LATENT",
-                "link": 925
-              },
-              {
-                "localized_name": "b",
-                "name": "b",
-                "shape": 7,
-                "type": "INT,FLOAT,IMAGE,LATENT",
-                "link": null
-              },
-              {
-                "localized_name": "c",
-                "name": "c",
-                "shape": 7,
-                "type": "INT,FLOAT,IMAGE,LATENT",
-                "link": 947
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "INT",
-                "name": "INT",
-                "type": "INT",
-                "links": []
-              },
-              {
-                "localized_name": "FLOAT",
-                "name": "FLOAT",
-                "type": "FLOAT",
-                "links": []
-              }
-            ],
-            "title": "Ctrl B (x native) height /32",
-            "properties": {
-              "Node name for S&R": "MathExpression|pysssss",
-              "aux_id": "pythongosssss/ComfyUI-Custom-Scripts",
-              "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469"
-            },
-            "widgets_values": [
-              "max(32, round(a * c / 32) * 32)"
-            ],
-            "color": "#253441",
-            "bgcolor": "#1b252e"
-          },
-          {
-            "id": 554,
-            "type": "VHS_LoadVideoFFmpegPath",
-            "pos": [
-              400,
-              1015
-            ],
-            "size": [
-              460,
-              333
-            ],
-            "flags": {},
-            "order": 11,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "meta_batch",
-                "name": "meta_batch",
-                "shape": 7,
-                "type": "VHS_BatchManager",
-                "link": null
-              },
-              {
-                "localized_name": "vae",
-                "name": "vae",
-                "shape": 7,
-                "type": "VAE",
-                "link": null
-              },
-              {
-                "localized_name": "video",
-                "name": "video",
-                "type": "STRING",
-                "widget": {
-                  "name": "video"
-                },
-                "link": 929
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "IMAGE",
-                "name": "IMAGE",
-                "type": "IMAGE",
-                "links": []
-              },
-              {
-                "localized_name": "mask",
-                "name": "mask",
-                "type": "MASK",
-                "links": []
-              },
-              {
-                "localized_name": "audio",
-                "name": "audio",
-                "type": "AUDIO",
-                "links": []
-              },
-              {
-                "localized_name": "video_info",
-                "name": "video_info",
-                "type": "VHS_VIDEOINFO",
-                "links": [
-                  930
-                ]
-              }
-            ],
-            "title": "PROBE \u2014 Ctrl C dims (1 frame)",
-            "properties": {
-              "Node name for S&R": "VHS_LoadVideoFFmpegPath",
-              "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite",
-              "ver": "4d907bee61e92c2e65af3bd6383a4e4d356126d1"
-            },
-            "widgets_values": {
-              "video": "input/source.mp4",
-              "force_rate": 0,
-              "custom_width": 0,
-              "custom_height": 0,
-              "frame_load_cap": 1,
-              "start_time": 0,
-              "format": "AnimateDiff"
-            },
-            "color": "#253441",
-            "bgcolor": "#1b252e"
-          },
-          {
-            "id": 555,
-            "type": "VHS_VideoInfo",
-            "pos": [
-              920,
-              991
-            ],
-            "size": [
-              460,
-              290
-            ],
-            "flags": {},
-            "order": 12,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "video_info",
-                "name": "video_info",
-                "type": "VHS_VIDEOINFO",
-                "link": 930
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "source_fps\ud83d\udfe8",
-                "name": "source_fps\ud83d\udfe8",
-                "type": "FLOAT",
-                "links": []
-              },
-              {
-                "localized_name": "source_frame_count\ud83d\udfe8",
-                "name": "source_frame_count\ud83d\udfe8",
-                "type": "INT",
-                "links": []
-              },
-              {
-                "localized_name": "source_duration\ud83d\udfe8",
-                "name": "source_duration\ud83d\udfe8",
-                "type": "FLOAT",
-                "links": []
-              },
-              {
-                "localized_name": "source_width\ud83d\udfe8",
-                "name": "source_width\ud83d\udfe8",
-                "type": "INT",
-                "links": [
-                  931
-                ]
-              },
-              {
-                "localized_name": "source_height\ud83d\udfe8",
-                "name": "source_height\ud83d\udfe8",
-                "type": "INT",
-                "links": [
-                  933
-                ]
-              },
-              {
-                "localized_name": "loaded_fps\ud83d\udfe6",
-                "name": "loaded_fps\ud83d\udfe6",
-                "type": "FLOAT",
-                "links": []
-              },
-              {
-                "localized_name": "loaded_frame_count\ud83d\udfe6",
-                "name": "loaded_frame_count\ud83d\udfe6",
-                "type": "INT",
-                "links": []
-              },
-              {
-                "localized_name": "loaded_duration\ud83d\udfe6",
-                "name": "loaded_duration\ud83d\udfe6",
-                "type": "FLOAT",
-                "links": []
-              },
-              {
-                "localized_name": "loaded_width\ud83d\udfe6",
-                "name": "loaded_width\ud83d\udfe6",
-                "type": "INT",
-                "links": []
-              },
-              {
-                "localized_name": "loaded_height\ud83d\udfe6",
-                "name": "loaded_height\ud83d\udfe6",
-                "type": "INT",
-                "links": []
-              }
-            ],
-            "title": "Ctrl C video info",
-            "properties": {
-              "Node name for S&R": "VHS_VideoInfo",
-              "aux_id": "Kosinkadink/ComfyUI-VideoHelperSuite",
-              "ver": "4d907bee61e92c2e65af3bd6383a4e4d356126d1"
-            },
-            "widgets_values": {},
-            "color": "#253441",
-            "bgcolor": "#1b252e"
-          },
-          {
-            "id": 557,
-            "type": "MathExpression|pysssss",
-            "pos": [
-              1440,
-              602
-            ],
-            "size": [
-              460,
-              161
-            ],
-            "flags": {},
-            "order": 13,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "a",
-                "name": "a",
-                "shape": 7,
-                "type": "INT,FLOAT,IMAGE,LATENT",
-                "link": 931
-              },
-              {
-                "localized_name": "b",
-                "name": "b",
-                "shape": 7,
-                "type": "INT,FLOAT,IMAGE,LATENT",
-                "link": null
-              },
-              {
-                "localized_name": "c",
-                "name": "c",
-                "shape": 7,
-                "type": "INT,FLOAT,IMAGE,LATENT",
-                "link": 948
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "INT",
-                "name": "INT",
-                "type": "INT",
-                "links": []
-              },
-              {
-                "localized_name": "FLOAT",
-                "name": "FLOAT",
-                "type": "FLOAT",
-                "links": []
-              }
-            ],
-            "title": "Ctrl C (x native) width /32",
-            "properties": {
-              "Node name for S&R": "MathExpression|pysssss",
-              "aux_id": "pythongosssss/ComfyUI-Custom-Scripts",
-              "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469"
-            },
-            "widgets_values": [
-              "max(32, round(a * c / 32) * 32)"
-            ],
-            "color": "#253441",
-            "bgcolor": "#1b252e"
-          },
-          {
-            "id": 558,
-            "type": "MathExpression|pysssss",
-            "pos": [
-              1440,
-              843
-            ],
-            "size": [
-              460,
-              161
-            ],
-            "flags": {},
-            "order": 14,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "a",
-                "name": "a",
-                "shape": 7,
-                "type": "INT,FLOAT,IMAGE,LATENT",
-                "link": 933
-              },
-              {
-                "localized_name": "b",
-                "name": "b",
-                "shape": 7,
-                "type": "INT,FLOAT,IMAGE,LATENT",
-                "link": null
-              },
-              {
-                "localized_name": "c",
-                "name": "c",
-                "shape": 7,
-                "type": "INT,FLOAT,IMAGE,LATENT",
-                "link": 949
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "INT",
-                "name": "INT",
-                "type": "INT",
-                "links": []
-              },
-              {
-                "localized_name": "FLOAT",
-                "name": "FLOAT",
-                "type": "FLOAT",
-                "links": []
-              }
-            ],
-            "title": "Ctrl C (x native) height /32",
-            "properties": {
-              "Node name for S&R": "MathExpression|pysssss",
-              "aux_id": "pythongosssss/ComfyUI-Custom-Scripts",
-              "ver": "609f3afaa74b2f88ef9ce8d939626065e3247469"
-            },
-            "widgets_values": [
-              "max(32, round(a * c / 32) * 32)"
-            ],
-            "color": "#253441",
-            "bgcolor": "#1b252e"
-          },
-          {
             "id": 163,
             "type": "HGAudioRange",
             "pos": [
-              400,
-              1428
+              1440,
+              120
             ],
             "size": [
               460,
@@ -17701,7 +16511,7 @@
           {
             "id": 493,
             "origin_id": -10,
-            "origin_slot": 7,
+            "origin_slot": 5,
             "target_id": 63,
             "target_slot": 7,
             "type": "FLOAT"
@@ -17709,7 +16519,7 @@
           {
             "id": 495,
             "origin_id": -10,
-            "origin_slot": 7,
+            "origin_slot": 5,
             "target_id": 163,
             "target_slot": 1,
             "type": "FLOAT"
@@ -17717,7 +16527,7 @@
           {
             "id": 610,
             "origin_id": -10,
-            "origin_slot": 11,
+            "origin_slot": 7,
             "target_id": 63,
             "target_slot": 2,
             "type": "STRING"
@@ -17725,7 +16535,7 @@
           {
             "id": 616,
             "origin_id": -10,
-            "origin_slot": 3,
+            "origin_slot": 1,
             "target_id": 163,
             "target_slot": 0,
             "type": "STRING"
@@ -17733,7 +16543,7 @@
           {
             "id": 658,
             "origin_id": -10,
-            "origin_slot": 5,
+            "origin_slot": 3,
             "target_id": 63,
             "target_slot": 3,
             "type": "FLOAT"
@@ -17741,7 +16551,7 @@
           {
             "id": 661,
             "origin_id": -10,
-            "origin_slot": 5,
+            "origin_slot": 3,
             "target_id": 163,
             "target_slot": 3,
             "type": "FLOAT"
@@ -17749,7 +16559,7 @@
           {
             "id": 710,
             "origin_id": -10,
-            "origin_slot": 6,
+            "origin_slot": 4,
             "target_id": 63,
             "target_slot": 6,
             "type": "INT"
@@ -17757,7 +16567,7 @@
           {
             "id": 713,
             "origin_id": -10,
-            "origin_slot": 6,
+            "origin_slot": 4,
             "target_id": 163,
             "target_slot": 2,
             "type": "INT"
@@ -17773,7 +16583,7 @@
           {
             "id": 917,
             "origin_id": -10,
-            "origin_slot": 8,
+            "origin_slot": 6,
             "target_id": 548,
             "target_slot": 0,
             "type": "INT"
@@ -17795,73 +16605,9 @@
             "type": "INT"
           },
           {
-            "id": 921,
-            "origin_id": -10,
-            "origin_slot": 1,
-            "target_id": 549,
-            "target_slot": 2,
-            "type": "STRING"
-          },
-          {
-            "id": 922,
-            "origin_id": 549,
-            "origin_slot": 3,
-            "target_id": 550,
-            "target_slot": 0,
-            "type": "VHS_VIDEOINFO"
-          },
-          {
-            "id": 923,
-            "origin_id": 550,
-            "origin_slot": 3,
-            "target_id": 552,
-            "target_slot": 0,
-            "type": "INT"
-          },
-          {
-            "id": 925,
-            "origin_id": 550,
-            "origin_slot": 4,
-            "target_id": 553,
-            "target_slot": 0,
-            "type": "INT"
-          },
-          {
-            "id": 929,
-            "origin_id": -10,
-            "origin_slot": 2,
-            "target_id": 554,
-            "target_slot": 2,
-            "type": "STRING"
-          },
-          {
-            "id": 930,
-            "origin_id": 554,
-            "origin_slot": 3,
-            "target_id": 555,
-            "target_slot": 0,
-            "type": "VHS_VIDEOINFO"
-          },
-          {
-            "id": 931,
-            "origin_id": 555,
-            "origin_slot": 3,
-            "target_id": 557,
-            "target_slot": 0,
-            "type": "INT"
-          },
-          {
-            "id": 933,
-            "origin_id": 555,
-            "origin_slot": 4,
-            "target_id": 558,
-            "target_slot": 0,
-            "type": "INT"
-          },
-          {
             "id": 944,
             "origin_id": -10,
-            "origin_slot": 4,
+            "origin_slot": 2,
             "target_id": 547,
             "target_slot": 2,
             "type": "FLOAT"
@@ -17869,40 +16615,8 @@
           {
             "id": 945,
             "origin_id": -10,
-            "origin_slot": 4,
+            "origin_slot": 2,
             "target_id": 548,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
-            "id": 946,
-            "origin_id": -10,
-            "origin_slot": 9,
-            "target_id": 552,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
-            "id": 947,
-            "origin_id": -10,
-            "origin_slot": 9,
-            "target_id": 553,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
-            "id": 948,
-            "origin_id": -10,
-            "origin_slot": 10,
-            "target_id": 557,
-            "target_slot": 2,
-            "type": "FLOAT"
-          },
-          {
-            "id": 949,
-            "origin_id": -10,
-            "origin_slot": 10,
-            "target_id": 558,
             "target_slot": 2,
             "type": "FLOAT"
           },
