@@ -24,9 +24,13 @@ PASS: Label-spacing adjustments change only positions, sizes and group bounds.
 PASS: Full two-chunk guide-mode render on the local H100 80GB environment:
       447 frames at 1376x768 / 24 fps, with 18.625-second video and audio streams.
       Saved latent master and completed resume record are present.
+PASS: Resume with two accepted chunks and one new chunk in the same environment:
+      651 frames at 1376x768 / 24 fps, with 27.125-second video and audio streams.
+      All 447 accepted video frames match the prior output by decoded-frame hashes.
+      Saved latent master and completed resume record are present.
 PASS: Adjacent Guide/Reference instructions change no runtime settings or wiring.
 
-The GPU render used the existing local node installation; isolated public-package
+The GPU renders used the existing local node installation; isolated public-package
 checks above cover browser loading and backend schemas. These checks do not establish
 pixel-identical output or minimum GPU memory requirements.
 
