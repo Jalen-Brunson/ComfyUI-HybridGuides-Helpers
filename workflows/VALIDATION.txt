@@ -21,7 +21,13 @@ PASS: All 133 retained runtime API nodes, settings and connections are unchanged
 PASS: Fresh, resumed and reference-mode backend validation repeated after probe removal.
 PASS: Label-spacing adjustments change only positions, sizes and group bounds.
 
-This report covers CPU, browser and schema checks. It does not establish
+PASS: Full two-chunk guide-mode render on the local H100 80GB environment:
+      447 frames at 1376x768 / 24 fps, with 18.625-second video and audio streams.
+      Saved latent master and completed resume record are present.
+PASS: Adjacent Guide/Reference instructions change no runtime settings or wiring.
+
+The GPU render used the existing local node installation; isolated public-package
+checks above cover browser loading and backend schemas. These checks do not establish
 pixel-identical output or minimum GPU memory requirements.
 
 Helper commit: 4f25a127fd387086f982a46c07a2b72c093da90e

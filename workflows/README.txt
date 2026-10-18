@@ -35,8 +35,15 @@ The entire text is one prompt, including any literal | characters. There is no
 project TXT or chunks TXT input, and no prompt file to create.
 Reference 1 is on by default. Reference 2–9 are off: enable a slot before naming its
 <Picture N> tag. Tags are renumbered automatically after disabled references drop out.
-To use Control A as a regular reference, turn GUIDE off and refer to <Video 1>.
-Choose a prompt/LoRA suited to reference mode. Control A's enable gate must remain on.
+CONTROL A — GUIDE OR REFERENCE
+The gold “Control A mode” switch is in SOURCE / PROMPT / RUN, below dimensions.
+  true  = GUIDE: the Source video supplies aligned motion/pose guidance. With the
+          character-swap LoRA, use body_swap: and describe “the guide video”.
+          Do not refer to it as <Video 1> in this mode.
+  false = REFERENCE: the same Source video is a windowed video reference.
+          Use <Video 1> in the prompt and choose a suitable reference-mode LoRA/prompt.
+<Picture 1> still identifies the character image in either mode. No second video path
+is needed. Keep Ctrl A — LOOPS enabled and keep the mode unchanged for continuation.
 
 CONTINUATION
 Keep the run name, version, source, seed, dimensions, FPS, chunk length and overlap.

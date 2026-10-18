@@ -1,6 +1,6 @@
 {
-  "revision": 4,
-  "last_node_id": 2513,
+  "revision": 5,
+  "last_node_id": 2514,
   "last_link_id": 3080,
   "nodes": [
     {
@@ -3690,7 +3690,7 @@
       "type": "PrimitiveInt",
       "pos": [
         70,
-        2274
+        2724
       ],
       "size": [
         540,
@@ -4999,7 +4999,7 @@
           ]
         }
       ],
-      "title": "EDIT \u2014 Control A: guide on / reference off",
+      "title": "EDIT \u2014 Control A mode: true = GUIDE / false = REFERENCE",
       "properties": {
         "Node name for S&R": "PrimitiveBoolean",
         "cnr_id": "comfy-core",
@@ -8354,7 +8354,7 @@
       "type": "easy setNode",
       "pos": [
         90,
-        2451
+        2901
       ],
       "size": [
         230,
@@ -12712,6 +12712,28 @@
       ],
       "color": "#334b59",
       "bgcolor": "#26343e"
+    },
+    {
+      "id": 2514,
+      "type": "MarkdownNote",
+      "title": "CONTROL A \u2014 GUIDE OR REFERENCE",
+      "pos": [
+        70,
+        2250
+      ],
+      "size": [
+        540,
+        370
+      ],
+      "flags": {},
+      "order": 405,
+      "mode": 0,
+      "properties": {},
+      "widgets_values": [
+        "## Control A mode\n**true = GUIDE:** Use the source clip as an aligned motion/pose guide. With the character-swap LoRA, begin with `body_swap:` and refer to \u201cthe guide video\u201d. Do not use `<Video 1>` for this mode.\n\n**false = REFERENCE:** Use the source clip as a windowed video reference. Refer to `<Video 1>` in your prompt and choose a prompt/LoRA suited to reference mode.\n\nBoth use **Source video**. `<Picture 1>` still identifies your character image. Keep **Ctrl A \u2014 LOOPS** enabled. Keep the mode unchanged when continuing an accepted run."
+      ],
+      "color": "#244653",
+      "bgcolor": "#172e39"
     }
   ],
   "links": [

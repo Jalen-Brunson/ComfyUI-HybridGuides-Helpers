@@ -13,6 +13,11 @@ notes explain setup and operation. All nine references are grouped in one number
 strip. The canvas runs horizontally, with Easy Use Set/Get nodes carrying long
 connections. No project or chunk text files are required.
 
+**Control A mode:** `true` uses Source video as a guide; `false` uses it as a
+windowed reference. In guide mode, describe “the guide video” (with `body_swap:`
+for the character-swap LoRA); in reference mode, use `<Video 1>` in your prompt.
+Keep the mode unchanged when continuing accepted chunks.
+
 Install the helper repository and the other public node packages listed in the
 setup instructions, then restart ComfyUI. Copy
 [the placeholder image](workflows/input/hybrid_guides_reference.png) into
